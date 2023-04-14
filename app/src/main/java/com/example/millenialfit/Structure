@@ -1,0 +1,13 @@
+enable fragment and Databinding -> GitHub gists
+create nav_graph
+create/design screen: fragment_home, fragment_chat
+create/design part for recycler: contact_item ->contact_item -> (imageview, textview, textview)
+                                               message_item -> (textview)
+
+create package: data -> Repository()API
+create package: model -> Contact(name: String, image: Int, chat: MutableList<String>)API
+create package: ui -> create class: HomeFragment(), ChatFragment()
+
+create package: adapter -> ContactAdapter(), MessageAdapter()
+
+create ViewModel: import Repository()

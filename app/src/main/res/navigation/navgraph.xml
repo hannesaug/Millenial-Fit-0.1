@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.millenialfit.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_accSetupScreen1"
+            app:destination="@id/accSetupScreen1" />
+    </fragment>
+    <fragment
+        android:id="@+id/accSetupScreen1"
+        android:name="com.example.millenialfit.ui.AccSetupScreen1"
+        android:label="fragment_acc_setup_screen1"
+        tools:layout="@layout/fragment_acc_setup_screen1" >
+        <action
+            android:id="@+id/action_accSetupScreen1_to_accsetupscreen2"
+            app:destination="@id/accsetupscreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/accsetupscreen2"
+        android:name="com.example.millenialfit.ui.Accsetupscreen2"
+        android:label="fragment_accsetupscreen2"
+        tools:layout="@layout/fragment_accsetupscreen2" >
+        <action
+            android:id="@+id/action_accsetupscreen2_to_accSetupScreen3"
+            app:destination="@id/accSetupScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/accSetupScreen3"
+        android:name="com.example.millenialfit.ui.AccSetupScreen3"
+        android:label="fragment_acc_setup_screen3"
+        tools:layout="@layout/fragment_acc_setup_screen3" >
+        <action
+            android:id="@+id/action_accSetupScreen3_to_accSetupScreen4"
+            app:destination="@id/accSetupScreen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/accSetupScreen4"
+        android:name="com.example.millenialfit.ui.AccSetupScreen4"
+        android:label="fragment_acc_setup_screen4"
+        tools:layout="@layout/fragment_acc_setup_screen4" >
+        <action
+            android:id="@+id/action_accSetupScreen4_to_profile_screen"
+            app:destination="@id/profile_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_screen"
+        android:name="com.example.millenialfit.ui.Profile_screen"
+        android:label="fragment_profile_screen"
+        tools:layout="@layout/fragment_profile_screen" >
+        <action
+            android:id="@+id/action_profile_screen_to_homescreen"
+            app:destination="@id/homescreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homescreen"
+        android:name="com.example.millenialfit.ui.Homescreen"
+        android:label="fragment_homescreen"
+        tools:layout="@layout/fragment_homescreen" >
+        <action
+            android:id="@+id/action_homescreen_to_featuredWorkoutScreen"
+            app:destination="@id/featuredWorkoutScreen" />
+        <action
+            android:id="@+id/action_homescreen_to_exerciseDetailFragment"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/featuredWorkoutScreen"
+        android:name="com.example.millenialfit.ui.FeaturedWorkoutScreen"
+        android:label="fragment_featured_workout_screen"
+        tools:layout="@layout/fragment_featured_workout_screen" >
+        <action
+            android:id="@+id/action_featuredWorkoutScreen_to_exerciseDetailFragment"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseDetailFragment"
+        android:name="com.example.millenialfit.ui.ExerciseDetailFragment"
+        android:label="fragment_exercise_detail"
+        tools:layout="@layout/fragment_exercise_detail" >
+        <argument
+            android:name="ID"
+            app:argType="integer" />
+    </fragment>
+</navigation>

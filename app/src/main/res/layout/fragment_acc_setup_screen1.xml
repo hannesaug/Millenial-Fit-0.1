@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_orange"
+    tools:context=".ui.AccSetupScreen1">
+
+    <ImageView
+        android:id="@+id/Acc_screen_Image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/widgets1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Bigwriting_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Physical Activity level"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Acc_screen_Image" />
+
+    <TextView
+        android:id="@+id/smallwriting_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="This will help us to give you a more personalized experience/plans"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/Bigwriting_text_view"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="@+id/Bigwriting_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/Bigwriting_text_view" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="15dp"
+        android:id="@+id/beginner_text_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        android:text="Beginner"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smallwriting_text_view" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="15dp"
+        android:id="@+id/intermediate_text_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:text="Intermediate"
+        android:textSize="28sp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/beginner_text_button"
+        app:layout_constraintStart_toStartOf="@+id/beginner_text_button"
+        app:layout_constraintTop_toBottomOf="@+id/beginner_text_button" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="15dp"
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Advanced"
+        android:textSize="28sp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/intermediate_text_button"
+        app:layout_constraintStart_toStartOf="@+id/intermediate_text_button"
+        app:layout_constraintTop_toBottomOf="@+id/intermediate_text_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
